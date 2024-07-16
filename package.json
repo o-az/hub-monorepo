@@ -38,6 +38,7 @@
     "lint-staged": "^13.2.2",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.1",
+    "semver": "^7.5.4",
     "tsup": "^6.5.0",
     "turbo": "1.10.3",
     "typescript": "^5.4.5"
@@ -45,8 +46,5 @@
   "lint-staged": {
     "*.ts": ["biome check"],
     "*.rs": ["rustfmt --check"]
-  },
-  "dependencies": {
-    "semver": "^7.5.4"
   }
 }
