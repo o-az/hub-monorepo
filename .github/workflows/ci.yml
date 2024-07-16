@@ -132,7 +132,9 @@ jobs:
         run: yarn build
 
       - name: Run linter
-        run: yarn lint:ci
+        run: |
+          yarn lint:ci
+          npm_config_yes=true npx sherif@latest
 
       - name: Run tests
         run: yarn test:ci

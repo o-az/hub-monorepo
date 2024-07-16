@@ -14,6 +14,7 @@
     "test:ci": "./node_modules/.bin/turbo run test:ci -- --passWithNoTests",
     "lint": "./node_modules/.bin/turbo run lint --parallel",
     "lint:ci": "./node_modules/.bin/turbo run lint:ci --parallel",
+    "lint:workspaces": "npm_config_yes=true npx sherif@latest",
     "prepare": "husky",
     "version-packages": "changeset version --ignore @farcaster/hubble",
     "release-packages": "yarn build && changeset publish",
