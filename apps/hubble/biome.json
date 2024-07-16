@@ -5,7 +5,7 @@
   },
   "formatter": {
     "enabled": true,
-    "indentSize": 2,
+    "indentWidth": 2,
     "indentStyle": "space",
     "lineWidth": 120,
     "ignore": ["src/abstract-leveldown.d.ts", "src/rocksdb.d.ts", "src/addon/*"]
@@ -15,7 +15,20 @@
     "rules": {
       "recommended": true,
       "complexity": {
-        "useLiteralKeys": "off"
+        "noForEach": "off",
+        "noBannedTypes": "off",
+        "useLiteralKeys": "off",
+        "noThisInStatic": "off",
+        "noStaticOnlyClass": "off"
+      },
+      "suspicious":{
+        "noExplicitAny": "off",
+        "noExportsInTest": "off",
+        "noImplicitAnyLet": "off",
+        "noDuplicateTestHooks": "off"
+      },
+      "style": {
+        "noUselessElse": "off"
       }
     },
     "ignore": ["src/abstract-leveldown.d.ts", "src/rocksdb.d.ts", "src/addon/*"]

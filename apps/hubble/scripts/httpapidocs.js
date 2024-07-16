@@ -1,6 +1,6 @@
-import { readFileSync, readdirSync } from "fs";
-import { join, dirname, resolve } from "path";
-import { fileURLToPath } from "url";
+import { readFileSync, readdirSync } from "node:fs";
+import { join, dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { remark } from "remark";
 import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
@@ -105,12 +105,12 @@ export function httpapidocs() {
             .map((row) => row.children[0].children[0]?.value)
             .filter((p) => p !== undefined);
           const line = `${fileName}:${node.position.start.line}`;
-          return { parameters, line};
+          return { parameters, line };
         }
       }
     }
 
-    return { parameters: [], line: '' };
+    return { parameters: [], line: "" };
   }
 
   function checkParametersInDocs(docTags, trees) {

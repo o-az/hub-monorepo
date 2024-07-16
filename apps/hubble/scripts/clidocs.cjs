@@ -1,6 +1,6 @@
-const { execSync } = require("child_process");
-const fs = require("fs");
-const path = require("path");
+const { execSync } = require("node:child_process");
+const fs = require("node:fs");
+const path = require("node:path");
 
 module.exports = function clidocs() {
   const docFileName = "www/docs/docs/cli.md";

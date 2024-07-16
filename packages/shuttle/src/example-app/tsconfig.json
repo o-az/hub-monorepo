@@ -4,10 +4,10 @@
     "declaration": true,
     "baseUrl": "./src",
     "outDir": "build",
-    "rootDir": "src",
+    "rootDir": ".",
     "isolatedModules": true,
-    "exactOptionalPropertyTypes": false,
+    "exactOptionalPropertyTypes": false
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "include": ["**/*.ts", "**/*.d.ts"],
   "exclude": ["build", "node_modules", "jest.config.ts"]
 }

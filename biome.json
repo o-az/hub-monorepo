@@ -3,9 +3,17 @@
   "organizeImports": {
     "enabled": false
   },
+  "json": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
   "formatter": {
     "enabled": true,
-    "indentSize": 2,
+    "indentWidth": 2,
     "indentStyle": "space",
     "lineWidth": 120,
     "ignore": [
@@ -13,7 +21,8 @@
       "src/rocksdb.d.ts",
       "packages/core/src/protobufs/generated/*",
       "packages/hub-nodejs/src/generated/*",
-      "packages/hub-web/src/generated/*"
+      "packages/hub-web/src/generated/*",
+      "migrations/*"
     ]
   },
   "linter": {
@@ -21,7 +30,15 @@
     "rules": {
       "recommended": true,
       "complexity": {
-        "useLiteralKeys": "off"
+        "noForEach": "off",
+        "useLiteralKeys": "off",
+        "noThisInStatic": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "style": {
+        "noUselessElse": "off"
       }
     },
     "ignore": [

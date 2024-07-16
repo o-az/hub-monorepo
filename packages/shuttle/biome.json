@@ -5,7 +5,7 @@
   },
   "formatter": {
     "enabled": true,
-    "indentSize": 2,
+    "indentWidth": 2,
     "indentStyle": "space",
     "lineWidth": 120,
     "ignore": []
@@ -15,7 +15,8 @@
     "rules": {
       "recommended": true,
       "complexity": {
-        "useLiteralKeys": "off"
+        "useLiteralKeys": "off",
+        "noThisInStatic": "off"
       }
     },
     "ignore": []

@@ -7,8 +7,8 @@
  * It runs as a part of "yarn lint"
  */
 
-const fs = require("fs");
-const path = require("path");
+const fs = require("node:fs");
+const path = require("node:path");
 
 module.exports = function grafana() {
   const filePath = path.join(__dirname, "../grafana/grafana-dashboard.json");

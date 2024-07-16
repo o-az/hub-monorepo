@@ -34,7 +34,7 @@
     "build": "tsup --config tsup.config.ts",
     "start": "tsx src/example-app/app.ts",
     "clean": "rimraf ./dist",
-    "lint": "biome format src/ --write && biome check src/ --apply",
+    "lint": "biome check --write src/",
     "lint:ci": "biome ci src/",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles --forceExit",
     "test:ci": "ENVIRONMENT=test NODE_OPTIONS=--experimental-vm-modules jest --ci --forceExit --coverage",
@@ -47,7 +47,6 @@
     "@types/pg-cursor": "^2.7.0",
     "@types/node": "^20.11.30",
     "biome-config-custom": "*",
-    "bullmq": "^5.7.1",
-    "prettier-config-custom": "*"
+    "bullmq": "^5.7.1"
   }
 }

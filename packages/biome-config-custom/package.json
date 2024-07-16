@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@biomejs/biome": "1.1.0"
+    "@biomejs/biome": "^1.8.3"
   },
   "private": true
 }
